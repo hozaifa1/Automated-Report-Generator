@@ -1,0 +1,86 @@
+[33mcommit 3ed1d98ae842abc8bd9de5780de0ef629d65810a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Hozaifa <20hozaifa02@gmail.com>
+Date:   Thu Jul 3 17:30:06 2025 +0600
+
+    add README.md
+
+[1mdiff --git a/README.md b/README.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..79d0a06[m
+[1m--- /dev/null[m
+[1m+++ b/README.md[m
+[36m@@ -0,0 +1,74 @@[m
+[32m+[m[32m# Automated Sales Report Generator[m
+[32m+[m
+[32m+[m[32mA simple and efficient Python script to automate the process of generating daily sales summary reports from a CSV file. This tool is designed to eliminate repetitive manual work, reduce errors, and provide quick insights into sales performance.[m
+[32m+[m
+[32m+[m[32m## 🚀 Features[m
+[32m+[m
+[32m+[m[32m-   **Reads Data from CSV**: Seamlessly ingests sales data from a `.csv` file.[m
+[32m+[m[32m-   **Calculates Key Metrics**: Automatically computes total revenue from the sales data.[m
+[32m+[m[32m-   **Generates Formatted Reports**: Creates a clean, human-readable text file summarizing the calculated metrics.[m
+[32m+[m[32m-   **Robust File Handling**: Automatically creates the output directory if it doesn't exist, ensuring the script runs without errors.[m
+[32m+[m
+[32m+[m[32m## 🛠️ Tech Stack[m
+[32m+[m
+[32m+[m[32m-   **Language**: Python 3[m
+[32m+[m[32m-   **Libraries**:[m
+[32m+[m[32m    -   `pandas`: For efficient data manipulation and analysis.[m
+[32m+[m[32m    -   `os`: For cross-platform compatible path and directory management.[m
+[32m+[m
+[32m+[m[32m## ⚙️ Setup and Installation[m
+[32m+[m
+[32m+[m[32mTo get this project running on your local machine, follow these steps.[m
+[32m+[m
+[32m+[m[32m1.  **Clone the repository:**[m
+[32m+[m[32m    ```sh[m
+[32m+[m[32m    git clone [https://github.com/your-username/automated-report-generator.git](https://github.com/your-username/automated-report-generator.git)[m
+[32m+[m[32m    ```[m
+[32m+[m
+[32m+[m[32m2.  **Navigate to the project directory:**[m
+[32m+[m[32m    ```sh[m
+[32m+[m[32m    cd automated-report-generator[m
+[32m+[m[32m    ```[m
+[32m+[m
+[32m+[m[32m3.  **Install the required dependencies:**[m
+[32m+[m[32m    *(Ensure you have a `requirements.txt` file in your project directory containing the line `pandas`)*[m
+[32m+[m[32m    ```sh[m
+[32m+[m[32m    pip install -r requirements.txt[m
+[32m+[m[32m    ```[m
+[32m+[m
+[32m+[m[32m## Usage[m
+[32m+[m
+[32m+[m[32m1.  **Prepare Your Data**:[m
+[32m+[m[32m    Place your sales data in a file named `sales_data.csv` in the root of the project directory. The CSV file must contain at least a `Sale_Amount` column.[m
+[32m+[m
+[32m+[m[32m    *Example `sales_data.csv`:*[m
+[32m+[m[32m    ```csv[m
+[32m+[m[32m    Date,Product,Sale_Amount,Region[m
+[32m+[m[32m    2025-07-03,Product A,150.00,North[m
+[32m+[m[32m    2025-07-03,Product B,200.50,South[m
+[32m+[m[32m    2025-07-03,Product A,140.00,North[m
+[32m+[m[32m    ```[m
+[32m+[m
+[32m+[m[32m2.  **Run the script:**[m
+[32m+[m[32m    Execute the main script from your terminal.[m
+[32m+[m[32m    ```sh[m
+[32m+[m[32m    python report_generator.py[m
+[32m+[m[32m    ```[m
+[32m+[m
+[32m+[m[32m3.  **Find Your Report**:[m
+[32m+[m[32m    The script will generate a summary report and save it in the `reports` directory. The file will be named with the current date, e.g., `reports/summary_2025-07-03.txt`.[m
+[32m+[m
+[32m+[m[32m    *Example Output (`summary_2025-07-03.txt`):*[m
+[32m+[m[32m    ```[m
+[32m+[m[32m    Sales Summary Report[m
+[32m+[m[32m    Date: 2025-07-03[m
+[32m+[m[32m    --------------------[m
+[32m+[m[32m    Total Revenue: $490.50[m
+[32m+[m[32m    --------------------[m
+[32m+[m[32m    ```[m
+[32m+[m
+[32m+[m[32m## ✍️ Author[m
+[32m+[m
+[32m+[m[32m-   **S. M. Hozaifa Hossain**[m
+[32m+[m[32m-   **GitHub**: [your-github-username](https://github.com/your-username)[m
+[32m+[m
